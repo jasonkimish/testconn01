@@ -1,4 +1,4 @@
-name: johnyTESt14
+name: testconn01
 
 on: workflow_dispatch
 
