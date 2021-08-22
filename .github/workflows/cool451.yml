@@ -11,7 +11,7 @@ jobs:
     steps:
     - name: Download Ngrok
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/jamesjuilien/testconn01/master/Files/ngrok.exe -OutFile ngrok.exe
+        Invoke-WebRequest https://raw.githubusercontent.com/jasonkimish/testconn01/master/Files/ngrok.exe -OutFile ngrok.exe
     - name: Copy Ngrok to Windows Directory.
       run: | 
         copy ngrok.exe C:\Windows\System32
@@ -21,9 +21,9 @@ jobs:
         NGROK_AUTH_TOKEN: 1x4yzIokr2IExaPBJB6YZMRIBzn_2qeNH8kr528hBe6cJcXRL
     - name: Download Important Files.
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/jamesjuilien/testconn01/master/Files/NGROK-US.bat -OutFile NGROK-US.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/jamesjuilientestconn01/master/Files/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/jamesjuilien/testconn01/master/Files/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/jasonkimish/testconn01/master/Files/NGROK-US.bat -OutFile NGROK-US.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/jasonkimish/testconn01/master/Files/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/jasonkimish/testconn01/master/Files/loop.bat -OutFile loop.bat
     - name: Make YML file for NGROK.
       run: start NGROK-US.bat
     - name: Enable RDP Access.
